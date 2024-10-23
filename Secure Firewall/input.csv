@@ -1,0 +1,5 @@
+Rule Name,Policy Name,Hit Count
+Allow HTTPS,Lab-FTD,0
+DNS Traffic,Lab-FTD,0
+SSH,Lab-FTD,0
+Test,Lab-FTD-Test,0

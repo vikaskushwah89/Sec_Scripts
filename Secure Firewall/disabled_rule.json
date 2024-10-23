@@ -1,0 +1,331 @@
+[
+    {
+        "metadata": {
+            "section": "Mandatory",
+            "category": "--Undefined--",
+            "accessPolicy": {
+                "name": "Lab-FTD",
+                "id": "0050568B-9012-0ed3-0000-004294967346",
+                "type": "AccessPolicy"
+            },
+            "timestamp": 1721994147814,
+            "domain": {
+                "name": "Global",
+                "id": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+                "type": "Domain"
+            }
+        },
+        "links": {
+            "self": "https://10.127.245.194/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/policy/accesspolicies/0050568B-9012-0ed3-0000-004294967346/accessrules/0050568B-9012-0ed3-0000-000268435456"
+        },
+        "action": "TRUST",
+        "enabled": false,
+        "type": "AccessRule",
+        "id": "0050568B-9012-0ed3-0000-000268435456",
+        "sendEventsToFMC": true,
+        "vlanTags": {},
+        "enableSyslog": false,
+        "variableSet": {
+            "name": "Default-Set",
+            "id": "76fa83ea-c972-11e2-8be8-8e45bb1343c0",
+            "type": "VariableSet"
+        },
+        "sourceZones": {
+            "objects": [
+                {
+                    "name": "Inside",
+                    "id": "6b24e73e-49ba-11ef-92a3-a070f0a03a38",
+                    "type": "SecurityZone"
+                }
+            ]
+        },
+        "destinationZones": {
+            "objects": [
+                {
+                    "name": "Outside",
+                    "id": "1a27ce64-49ba-11ef-92a3-a070f0a03a38",
+                    "type": "SecurityZone"
+                }
+            ]
+        },
+        "sourceNetworks": {
+            "objects": [
+                {
+                    "type": "Network",
+                    "overridable": false,
+                    "id": "95916354-5aa1-4057-8eea-b42a5a207abc",
+                    "name": "IPv4-Private-10.0.0.0-8"
+                }
+            ]
+        },
+        "logFiles": false,
+        "destinationPorts": {
+            "objects": [
+                {
+                    "type": "ProtocolPortObject",
+                    "protocol": "TCP",
+                    "overridable": false,
+                    "id": "1834bd00-38bb-11e2-86aa-62f0c593a59a",
+                    "name": "HTTPS"
+                }
+            ]
+        },
+        "sourceDynamicObjects": {},
+        "destinationDynamicObjects": {},
+        "logBegin": false,
+        "logEnd": true,
+        "name": "Allow HTTPS",
+        "items": []
+    },
+    {
+        "metadata": {
+            "section": "Mandatory",
+            "category": "--Undefined--",
+            "accessPolicy": {
+                "name": "Lab-FTD",
+                "id": "0050568B-9012-0ed3-0000-004294967346",
+                "type": "AccessPolicy"
+            },
+            "timestamp": 1721994151235,
+            "domain": {
+                "name": "Global",
+                "id": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+                "type": "Domain"
+            }
+        },
+        "links": {
+            "self": "https://10.127.245.194/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/policy/accesspolicies/0050568B-9012-0ed3-0000-004294967346/accessrules/0050568B-9012-0ed3-0000-000268435458"
+        },
+        "action": "ALLOW",
+        "enabled": false,
+        "type": "AccessRule",
+        "id": "0050568B-9012-0ed3-0000-000268435458",
+        "sendEventsToFMC": true,
+        "vlanTags": {},
+        "enableSyslog": false,
+        "variableSet": {
+            "name": "Default-Set",
+            "id": "76fa83ea-c972-11e2-8be8-8e45bb1343c0",
+            "type": "VariableSet"
+        },
+        "sourceZones": {
+            "objects": [
+                {
+                    "name": "Inside",
+                    "id": "6b24e73e-49ba-11ef-92a3-a070f0a03a38",
+                    "type": "SecurityZone"
+                }
+            ]
+        },
+        "destinationZones": {
+            "objects": [
+                {
+                    "name": "Outside",
+                    "id": "1a27ce64-49ba-11ef-92a3-a070f0a03a38",
+                    "type": "SecurityZone"
+                }
+            ]
+        },
+        "sourceNetworks": {
+            "objects": [
+                {
+                    "type": "Network",
+                    "overridable": false,
+                    "id": "b7a78a7d-20c5-47b2-b02f-86b4360112ac",
+                    "name": "IPv4-Private-172.16.0.0-12"
+                }
+            ]
+        },
+        "logFiles": false,
+        "destinationPorts": {
+            "objects": [
+                {
+                    "type": "ProtocolPortObject",
+                    "protocol": "TCP",
+                    "overridable": false,
+                    "id": "1834e712-38bb-11e2-86aa-62f0c593a59a",
+                    "name": "DNS_over_TCP"
+                },
+                {
+                    "type": "ProtocolPortObject",
+                    "protocol": "UDP",
+                    "overridable": false,
+                    "id": "1834e8ca-38bb-11e2-86aa-62f0c593a59a",
+                    "name": "DNS_over_UDP"
+                }
+            ]
+        },
+        "sourceDynamicObjects": {},
+        "destinationDynamicObjects": {},
+        "logBegin": false,
+        "logEnd": true,
+        "name": "DNS Traffic",
+        "items": []
+    },
+    {
+        "metadata": {
+            "section": "Mandatory",
+            "category": "--Undefined--",
+            "accessPolicy": {
+                "name": "Lab-FTD",
+                "id": "0050568B-9012-0ed3-0000-004294967346",
+                "type": "AccessPolicy"
+            },
+            "timestamp": 1721994154476,
+            "domain": {
+                "name": "Global",
+                "id": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+                "type": "Domain"
+            }
+        },
+        "links": {
+            "self": "https://10.127.245.194/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/policy/accesspolicies/0050568B-9012-0ed3-0000-004294967346/accessrules/0050568B-9012-0ed3-0000-000268435459"
+        },
+        "action": "ALLOW",
+        "enabled": false,
+        "type": "AccessRule",
+        "id": "0050568B-9012-0ed3-0000-000268435459",
+        "sendEventsToFMC": true,
+        "vlanTags": {},
+        "enableSyslog": false,
+        "variableSet": {
+            "name": "Default-Set",
+            "id": "76fa83ea-c972-11e2-8be8-8e45bb1343c0",
+            "type": "VariableSet"
+        },
+        "sourceZones": {
+            "objects": [
+                {
+                    "name": "Inside",
+                    "id": "6b24e73e-49ba-11ef-92a3-a070f0a03a38",
+                    "type": "SecurityZone"
+                }
+            ]
+        },
+        "destinationZones": {
+            "objects": [
+                {
+                    "name": "Outside",
+                    "id": "1a27ce64-49ba-11ef-92a3-a070f0a03a38",
+                    "type": "SecurityZone"
+                }
+            ]
+        },
+        "sourceNetworks": {
+            "objects": [
+                {
+                    "type": "Network",
+                    "overridable": false,
+                    "id": "95916354-5aa1-4057-8eea-b42a5a207abc",
+                    "name": "IPv4-Private-10.0.0.0-8"
+                }
+            ]
+        },
+        "destinationNetworks": {
+            "objects": [
+                {
+                    "type": "Network",
+                    "overridable": false,
+                    "id": "1dcefdd8-07f7-438a-9221-97d63710614e",
+                    "name": "IPv4-Private-192.168.0.0-16"
+                }
+            ]
+        },
+        "logFiles": false,
+        "destinationPorts": {
+            "objects": [
+                {
+                    "type": "ProtocolPortObject",
+                    "protocol": "TCP",
+                    "overridable": false,
+                    "id": "1834c890-38bb-11e2-86aa-62f0c593a59a",
+                    "name": "SSH"
+                }
+            ]
+        },
+        "sourceDynamicObjects": {},
+        "destinationDynamicObjects": {},
+        "logBegin": true,
+        "logEnd": true,
+        "name": "SSH",
+        "items": []
+    },
+    {
+        "metadata": {
+            "section": "Mandatory",
+            "category": "--Undefined--",
+            "accessPolicy": {
+                "name": "Lab-FTD-Test",
+                "id": "0050568B-9012-0ed3-0000-012884907009",
+                "type": "AccessPolicy"
+            },
+            "timestamp": 1721994157842,
+            "domain": {
+                "name": "Global",
+                "id": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+                "type": "Domain"
+            }
+        },
+        "links": {
+            "self": "https://10.127.245.194/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/policy/accesspolicies/0050568B-9012-0ed3-0000-012884907009/accessrules/0050568B-9012-0ed3-0000-000268435461"
+        },
+        "action": "ALLOW",
+        "enabled": false,
+        "type": "AccessRule",
+        "id": "0050568B-9012-0ed3-0000-000268435461",
+        "sendEventsToFMC": true,
+        "vlanTags": {},
+        "enableSyslog": false,
+        "variableSet": {
+            "name": "Default-Set",
+            "id": "76fa83ea-c972-11e2-8be8-8e45bb1343c0",
+            "type": "VariableSet"
+        },
+        "sourceZones": {
+            "objects": [
+                {
+                    "name": "Inside",
+                    "id": "6b24e73e-49ba-11ef-92a3-a070f0a03a38",
+                    "type": "SecurityZone"
+                }
+            ]
+        },
+        "destinationZones": {
+            "objects": [
+                {
+                    "name": "Outside",
+                    "id": "1a27ce64-49ba-11ef-92a3-a070f0a03a38",
+                    "type": "SecurityZone"
+                }
+            ]
+        },
+        "sourceNetworks": {
+            "objects": [
+                {
+                    "type": "Network",
+                    "overridable": false,
+                    "id": "95916354-5aa1-4057-8eea-b42a5a207abc",
+                    "name": "IPv4-Private-10.0.0.0-8"
+                }
+            ]
+        },
+        "logFiles": false,
+        "destinationPorts": {
+            "objects": [
+                {
+                    "type": "ProtocolPortObject",
+                    "protocol": "TCP",
+                    "overridable": false,
+                    "id": "1834c674-38bb-11e2-86aa-62f0c593a59a",
+                    "name": "FTP"
+                }
+            ]
+        },
+        "sourceDynamicObjects": {},
+        "destinationDynamicObjects": {},
+        "logBegin": false,
+        "logEnd": true,
+        "name": "Test",
+        "items": []
+    }
+]
