@@ -1,0 +1,205 @@
+[
+    {
+        "metadata": {
+            "ruleIndex": 3,
+            "section": "Mandatory",
+            "category": "--Undefined--",
+            "accessPolicy": {
+                "name": "Lab-FTD",
+                "id": "0050568B-9012-0ed3-0000-004294967346",
+                "type": "AccessPolicy"
+            },
+            "timestamp": 1752604392614,
+            "domain": {
+                "name": "Global",
+                "id": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+                "type": "Domain"
+            }
+        },
+        "links": {
+            "self": "https://10.127.245.194/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/policy/accesspolicies/0050568B-9012-0ed3-0000-004294967346/accessrules/0050568B-9012-0ed3-0000-000268436482"
+        },
+        "enabled": false,
+        "sendEventsToFMC": true,
+        "urls": {
+            "urlCategoriesWithReputation": [
+                {
+                    "reputation": "FAVORABLE_AND_UNKNOWN",
+                    "category": {
+                        "name": "Animals and Pets",
+                        "id": "abba9b63-bb10-4729-b901-2e2aa0f02107",
+                        "type": "URLCategory"
+                    },
+                    "type": "UrlCategoryAndReputation"
+                }
+            ]
+        },
+        "enableSyslog": false,
+        "destinationDynamicObjects": {},
+        "sourceNetworks": {
+            "objects": [
+                {
+                    "type": "Network",
+                    "overridable": false,
+                    "id": "95916354-5aa1-4057-8eea-b42a5a207abc",
+                    "name": "IPv4-Private-10.0.0.0-8"
+                }
+            ]
+        },
+        "sourceZones": {
+            "objects": [
+                {
+                    "name": "Inside",
+                    "id": "6b24e73e-49ba-11ef-92a3-a070f0a03a38",
+                    "type": "SecurityZone",
+                    "subType": "Routed"
+                }
+            ]
+        },
+        "destinationZones": {
+            "objects": [
+                {
+                    "name": "Outside",
+                    "id": "1a27ce64-49ba-11ef-92a3-a070f0a03a38",
+                    "type": "SecurityZone",
+                    "subType": "Routed"
+                }
+            ]
+        },
+        "logBegin": true,
+        "logEnd": false,
+        "logFiles": false,
+        "sourceDynamicObjects": {},
+        "variableSet": {
+            "name": "Default-Set",
+            "id": "76fa83ea-c972-11e2-8be8-8e45bb1343c0",
+            "type": "VariableSet"
+        },
+        "vlanTags": {},
+        "id": "0050568B-9012-0ed3-0000-000268436482",
+        "action": "ALLOW",
+        "type": "AccessRule",
+        "name": "URL-Test",
+        "items": []
+    },
+    {
+        "metadata": {
+            "ruleIndex": 4,
+            "section": "Mandatory",
+            "category": "--Undefined--",
+            "accessPolicy": {
+                "name": "Lab-FTD",
+                "id": "0050568B-9012-0ed3-0000-004294967346",
+                "type": "AccessPolicy"
+            },
+            "timestamp": 1754938474981,
+            "domain": {
+                "name": "Global",
+                "id": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+                "type": "Domain"
+            }
+        },
+        "links": {
+            "self": "https://10.127.245.194/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/policy/accesspolicies/0050568B-9012-0ed3-0000-004294967346/accessrules/0050568B-9012-0ed3-0000-000268466176"
+        },
+        "enabled": false,
+        "sendEventsToFMC": false,
+        "enableSyslog": false,
+        "destinationDynamicObjects": {},
+        "sourceNetworks": {
+            "objects": [
+                {
+                    "type": "Host",
+                    "overridable": false,
+                    "id": "0050568B-9012-0ed3-0000-060129554944",
+                    "name": "10.155.24.151_SCCM"
+                }
+            ]
+        },
+        "sourceZones": {
+            "objects": [
+                {
+                    "name": "ACI-DMZ",
+                    "id": "ad3eb46e-19d1-11f0-a477-de2a075506c0",
+                    "type": "SecurityZone",
+                    "subType": "Routed"
+                }
+            ]
+        },
+        "logBegin": false,
+        "logEnd": false,
+        "logFiles": false,
+        "sourceDynamicObjects": {},
+        "variableSet": {
+            "name": "Default-Set",
+            "id": "76fa83ea-c972-11e2-8be8-8e45bb1343c0",
+            "type": "VariableSet"
+        },
+        "vlanTags": {},
+        "id": "0050568B-9012-0ed3-0000-000268466176",
+        "action": "ALLOW",
+        "type": "AccessRule",
+        "name": "New-Rule-#699",
+        "items": []
+    },
+    {
+        "metadata": {
+            "ruleIndex": 2,
+            "section": "Mandatory",
+            "category": "--Undefined--",
+            "accessPolicy": {
+                "name": "Lab-FTD-Test",
+                "id": "0050568B-9012-0ed3-0000-012884907009",
+                "type": "AccessPolicy"
+            },
+            "timestamp": 1754938546442,
+            "domain": {
+                "name": "Global",
+                "id": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+                "type": "Domain"
+            }
+        },
+        "links": {
+            "self": "https://10.127.245.194/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/policy/accesspolicies/0050568B-9012-0ed3-0000-012884907009/accessrules/0050568B-9012-0ed3-0000-000268466177"
+        },
+        "enabled": false,
+        "sendEventsToFMC": false,
+        "enableSyslog": false,
+        "destinationDynamicObjects": {},
+        "sourceNetworks": {
+            "objects": [
+                {
+                    "type": "Host",
+                    "overridable": false,
+                    "id": "0050568B-9012-0ed3-0000-060129550486",
+                    "name": "10.223.105.94_ISE_Pune"
+                }
+            ]
+        },
+        "sourceZones": {
+            "objects": [
+                {
+                    "name": "Inside",
+                    "id": "6b24e73e-49ba-11ef-92a3-a070f0a03a38",
+                    "type": "SecurityZone",
+                    "subType": "Routed"
+                }
+            ]
+        },
+        "logBegin": false,
+        "logEnd": false,
+        "logFiles": false,
+        "sourceDynamicObjects": {},
+        "variableSet": {
+            "name": "Default-Set",
+            "id": "76fa83ea-c972-11e2-8be8-8e45bb1343c0",
+            "type": "VariableSet"
+        },
+        "vlanTags": {},
+        "id": "0050568B-9012-0ed3-0000-000268466177",
+        "action": "ALLOW",
+        "type": "AccessRule",
+        "name": "New_Rule_#2334",
+        "items": []
+    }
+]

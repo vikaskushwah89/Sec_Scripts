@@ -1,0 +1,53 @@
+import datetime
+import csv
+import fmcapi
+
+host = "10.127.245.194"
+username = "admin"
+password = "V!cky!123"
+
+# This is the CSV file which contains time range object names. DO NOT CHANGE THE FILE HEADERS.
+INPUT_FILE = "/Users/vikkushw/Scripts/Secure Firewall/timerange_objects.csv"
+
+data_list = []
+rules_data = []
+
+while True:
+    start_date = input("Please enter start date and time in the format YYYY-MM-DDTHH:MM :")
+    try:
+        date_object_user = datetime.datetime.strptime(start_date, "%Y-%m-%dT%H:%M")
+        break
+    except ValueError:
+        print("Please enter the date and time in the correct format (YYYY-MM-DDTHH:MM)")
+
+while True:
+    end_date = input("Please enter end date and time in the format YYYY-MM-DDTHH:MM :")
+    try:
+        date_object_user = datetime.datetime.strptime(end_date, "%Y-%m-%dT%H:%M")
+        break
+    except ValueError:
+        print("Please enter the date and time in the correct format (YYYY-MM-DDTHH:MM)")
+
+# Read the input timerange_objects CSV file to get Object Names
+with open(INPUT_FILE, 'r', encoding='utf-8') as file:
+    csv_reader = csv.DictReader(file)
+    for row in csv_reader:
+        data_list.append(row)
+
+# Initiate a connection to the FMC and request tokens
+with fmcapi.FMC(
+        host=host,
+        username=username,
+        password=password,
+        autodeploy=False,
+    ) as fmc1:
+
+    # Get the desired rule from policy and disable it. Also, store rule data into a list
+    for item in data_list:
+        object_name = item["Timerange"]
+        timerange_objects = fmcapi.TimeRanges(fmc=fmc1)
+        timerange_objects.get(name = object_name)
+        timerange_objects.effectiveStartDateTime = start_date
+        timerange_objects.effectiveEndDateTime = end_date
+        timerange_objects.put()
+        print(f"Time Range Object Updated Successfully - {object_name}")
