@@ -1,3 +1,0 @@
-2025-07-11 00:42:30,704 - INFO - Connecting to SMA: 10.23.24.25
-2025-07-11 00:42:30,711 - DEBUG - Starting new HTTP connection (1): 10.23.24.25:6080
-2025-07-11 00:43:45,719 - ERROR - Time out to 10.23.24.25
